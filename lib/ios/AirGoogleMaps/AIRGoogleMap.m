@@ -212,6 +212,7 @@ id regionAsJSON(MKCoordinateRegion region) {
       [self removeReactSubview:(UIView *)childSubviews[i]];
     }
   }
+  [(UIView*)subview removeFromSuperview];
   [_reactSubviews removeObject:(UIView *)subview];
 }
 #pragma clang diagnostic pop
